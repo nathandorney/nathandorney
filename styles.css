@@ -116,9 +116,10 @@ span {
 ::-moz-selection { background: #EED056; }
 ::selection { background: #EED056; }
 
-main img {
-  /* Render when in viewport */
+img {
   content-visibility: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* CONTENT */
@@ -129,6 +130,15 @@ main img {
   top: 1.5rem;
   right: 1.5rem;
   color: black;
+  z-index: 999;
+}
+
+.project-link {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: black;
+  z-index: 999;
 }
 
 #home-hero {
@@ -149,13 +159,13 @@ main img {
 
 
 #content-wrapper {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 1.225rem;
 }
 
 #heading-wrapper {
-  max-width: 75ch;
+  max-width: 80ch;
 }
 
 #heading-wrapper h2 {
@@ -181,7 +191,7 @@ main img {
 /* Projects Section Homepage */
 
 .project-section {
-  max-width: 1440px;
+  max-width: 1200px;
   padding: 0 1.225rem;
   margin: 0 auto;
   padding-bottom: 10vh;
@@ -431,6 +441,18 @@ main img {
 /* Project Page */
 
 #project-hero {
-  height: 60vh;
-  background-color: white ;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.project-hero-text-wrapper{
+  display: flex;
+  height: 70vh;
+  align-items: center;
+}
+
+.project-layout {
+  padding: 0 24px;
 }
