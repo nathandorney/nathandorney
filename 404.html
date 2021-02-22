@@ -13,25 +13,35 @@
         <meta property="og:site_name" content="Portfolio of Nathan Dorney">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:image:alt" content="image description">
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <link rel="icon" type="image/svg+xml" href="/media/favicon.svg">
         <link rel="stylesheet" href="/styles.css">   
     </head>
 
-    <body>
+    <body onload="accentColor()"> 
 
-        <section class="about">
-            <img class="avatar" src="me.png" alt="Avatar" width="80" height="80" >
-                <div class="content-wrapper">
-                    <div class="about-text">
-                        <h2>404! Whoops the page you are looking for no longer exists.</h2>
-                        <a href="/index.html">Back home</a>
-                    </div>
+        <header>
+            <nav id="home-header">
+                <a class="home-about-link" href="/about.html">@nathandorney</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="error-hero">
+                <div class="error-hero-inner">
+                    <h1>Whoops! The page you are looking for no longer exists.</h1>
+                    <a href="index.html">Back home</a>        
                 </div>
-        </section>
-    
+            </section>
+        </main>
 
 
-    <script src="/dvd.js"></script>
-</body>
+
+
+        <script src="/scripts/color.js"></script>
+
+    </body>
 </html>
     
+
+
+
